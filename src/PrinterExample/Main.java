@@ -1,3 +1,5 @@
+package PrinterExample;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,7 +13,7 @@ public class Main {
         printers.add(new Lexmark());
 
 
-//        Printer hp = new HPDesk();
+//        PrinterExample.Printer hp = new PrinterExample.HPDesk();
 //        hp.print();
 
         for (Printer printer : printers) {

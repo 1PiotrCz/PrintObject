@@ -1,8 +1,10 @@
+package PrinterExample;
+
 /**
  * Created by Piotr on 2017-04-28.
  */
 public class HPDesk implements Printer{
-    //public class HPDesk extends Printer{
+    //public class PrinterExample.HPDesk extends PrinterExample.Printer{
 
     @Override
     public void print() {
