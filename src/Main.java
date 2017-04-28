@@ -24,7 +24,10 @@ public class Main {
 //        } else {
 //            System.out.println("Nie są takie same");
 //        }
-        
+
+        if (printers.get(0).equals(printers.get(1))){
+            System.out.println("Są takie same");
+        }
 
 
         System.out.println("Hashcode dla HP0: " + printers.get(0).hashCode());
