@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 /**
  * Created by Piotr on 2017-04-28.
  */
@@ -57,4 +59,19 @@ public class Printer {
                 '}';
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Printer)) return false;
+        Printer printer = (Printer) o;
+        return levelOfBlackAtr == printer.levelOfBlackAtr &&
+                levelOfColorAtr == printer.levelOfColorAtr &&
+                Objects.equals(name, printer.name) &&
+                Objects.equals(model, printer.model);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, model, levelOfBlackAtr, levelOfColorAtr);
+    }
 }
