@@ -19,5 +19,7 @@ public class Main {
         for (Printer printer : printers) {
             printer.print();
         }
+
+
     }
 }
